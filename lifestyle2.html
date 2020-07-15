@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lifestyle</title>
+<link href="bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+<link href="style-about.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+
+<body>
+	<p id="time" style="font-size:25px;font-weight: bolder;position: absolute"></p>
+	<!--导航栏-->
+	<ul class="menu">
+	<li class="name">Xiao</li>
+	<li class="name">&nbsp;&nbsp;Longbao</li>
+		<br><br><br><br>
+	<li><a href="about.html">About</a></li>
+	<li><a href="hobbies.html">Hobbies</a></li>
+	<li><a href="experiences.html">Experiences</a></li>
+	<li><a class="active"  href="lifestyle.html">Lifestyle</a></li>
+	<li><img id="left" src="20.png" style="width:30%;margin-top:10px;margin-left:10px;"></li>
+	</ul>
+		<script>
+	var d = new Date();
+	var x = document.getElementById("time");
+		x.innerHTML=d.toLocaleDateString();
+	</script>
+	<script>
+	$("#left").click(function(){
+		location.href='index.html';
+	});
+	</script>
+	
+	<!--我的生活方式-->
+	<div class="myLifestyle" >
+	<p id="Text8">How is my life?</p>
+	<div id="div1">
+		<p id="Text9">Persistence</p>
+		<div id="Text11">Never give up
+		<br><br>
+		Great works are performed not by strenth,but by perseverance.
+		<br><br>
+		Discontent is the first necessity of progress
+		<br>
+		Nothing is impossible to a willing heart
+		<img id="next" src="22.png" style="width:10%;position: relative; left: -450px;top:80px">
+		</div>
+		<img src="23.JPG" id="Image4">
+	</div>
+	</div>
+	<script>
+	$(document).ready(function(){
+		$("#div1").mouseover(function(){
+			$("#Text11").css("display","block");
+			$("#Image4").css("opacity","0.2");
+		});
+		$("#div1").mouseout(function(){
+			$("#Text11").css("display","none");
+			$("#Image4").css("opacity","1");
+		});
+	});
+	//鼠标移动到图片上方时，文本显现，同时背景图片不透明度下降
+	 $(document).ready(function(){
+		 $("#next").click(function(){
+			 location.href='lifestyle.html';
+		 });
+	 })	;
+	//跳转到下一页
+	</script>
+</body>
+</html>

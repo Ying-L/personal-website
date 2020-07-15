@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Experiences</title>
+<link href="bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+<link href="style-about.css" rel="stylesheet" type="text/css">
+ <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+  </script>
+	
+</head>
+<body>
+	<p id="time" style="font-size:25px;font-weight: bolder;position: absolute"></p>
+	<!--导航栏-->
+	<ul class="menu">
+	<li class="name">Xiao</li>
+	<li class="name">&nbsp;&nbsp;Longbao</li>
+		<br><br><br><br>
+	<li><a href="about.html">About</a></li>
+	<li><a href="hobbies.html">Hobbies</a></li>
+	<li><a class="active" href="experiences.html">Experiences</a></li>
+	<li><a href="lifestyle.html">Lifestyle</a></li>
+	<li><img id="left" src="20.png" style="width:30%;margin-top:10px;margin-left:10px;"></li>
+	</ul>
+	
+	<script>
+	var d = new Date();
+	var x = document.getElementById("time");
+		x.innerHTML=d.toLocaleDateString();
+	</script>
+	
+	<script>
+	$("#left").click(function(){
+		location.href='index.html';
+	});
+	</script>
+	
+	<!--我的经历-->
+	<div class="myExperiences">
+	
+		<!--左侧布局-->
+		<div style="float:left;margin: 50px 5px 5px;">
+		<img id="Image6" src="17.JPG" style="width: 20%;margin: 50px;float: left">	
+		<h1 style="margin-top:50px">Volunteer Work</h1>
+		<ol>
+		<li class="Text7">Volunteer work of "Trinity" comprehensive evaluation of recruitment examination</li>	
+		<li class="Text7">Volunteer work in the Silk Museum</li>
+		<li class="Text7">Volunteer work in School for the Deaf</li>
+		<li class="Text7">...</li>
+		<span style="color:red;font-size: 20px">(move the mouse over the picture)</span>
+		</ol>
+		</div>
+		
+		<!--右侧布局-->
+		<div style="float:right;margin:-15px 5px 0px;">
+		<img  id="Image7" src="18.jpg" style="width: 20%; margin:0px 50px; float:right">
+		<h1 style="float:right;">Challenges</h1>
+		<p class="Text7" style="float:right;">I like adventure, And I'm willing to try anything I haven't tried before.</p>
+		<p class="Text7" style="float:right;">Challenges like Survival Challenge bring me meaningful experience.</p>
+		<p class="Text7" style="float:right;">Each challenge will teach us a lesson.</p>
+		<p class="Text7" style="float:right;">Besides, I take active part in Advertising Creative Contest and so on.</p>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

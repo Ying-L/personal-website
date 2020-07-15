@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hobbies</title>
+<link href="bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+<link href="style-about.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+  </script>
+</head>
+
+<body>
+	<p id="time" style="font-size:25px;font-weight: bolder;position: absolute"></p>
+	<!--竖向导航栏-->
+	<ul class="menu">
+	<li class="name">Xiao</li>
+	<li class="name">&nbsp;&nbsp;Longbao</li>
+		<br><br><br><br>
+	<li><a href="about.html">About</a></li>
+	<li><a class="active" href="hobbies.html">Hobbies</a></li>
+	<li><a href="experiences.html">Experiences</a></li>
+	<li><a href="lifestyle.html">Lifestyle</a></li>
+	<li><img id="left" src="20.png" style="width:30%;margin-top:10px;margin-left:10px;"></li>
+	</ul>
+	
+	<script>
+	var d = new Date();
+	var x = document.getElementById("time");
+		x.innerHTML=d.toLocaleDateString();
+	</script>
+	<script>
+	$("#left").click(function(){
+		location.href='index.html';
+	});
+	</script>
+	
+	<div id="myHobbies">
+	
+	 <!--设置了一个简易的下拉菜单-->
+	 <div class="dropdown">
+     <input type="image" class="dropbtn" src="10.png" style="width: 10%">
+		
+     <div class="dropdown-content">
+     <a href="#Image3">running</a>
+	 <a href="#Text10">watching series</a>
+     </div>
+     </div>
+		<img src="11.JPG" id="Image3">
+		<img src="12.JPG" class="Image4">
+		<img src="13.JPG" class="Image4">
+		<h1>Running</h1>
+		<p id="Text6">I like running on the playground in the bright morning, feeling the fresh air and stretching my body.Running brings me happiness and makes me forget all my troubles.It's also good for our health. It makes us less likely to get sick and keeps us in a good mood all the time.</p>
+		<br>
+		<hr width="95%">
+		
+		<!--分栏-->
+		<div class="column">
+		<img src="16.jpg" class="Image5">
+		<h1>Watching Series to relax</h1>
+		<p style="position: relative;top:20px;width: 270px"><i>Someday or Oneday</i> is one of the most popular TV series of the year，starting with the search for someone, it tells a touching story of men and women who travel through 1998 and 2019 in search of each other.</p></div>
+		<div class="column">
+		<img src="15.jpg" class="Image5">
+		<p style="position: relative;top:20px;width: 270px"><i>1988</i> mainly tells the story of five families living in Shuangmendong, Daofeng district, Seoul in 1988. It depicts the story of warm family affection and traditional love and friendship among neighborhood residents.</p>
+		</div>
+		<div class="column">
+		<img src="14.jpg" class="Image5">
+		<p id="Text10" style="position: relative;top:20px;width: 270px">Adapted from Zijin Chen's mystery novel "Bad Kids," the show tells the story of three children in a coastal town who accidentally recorded a murder while visiting a scenic spot and their adventures is unfold.Complicated and confusing details of a case, will take a few families to unpredictable future.</p>
+		</div>
+	</div>
+</body>
+</html>

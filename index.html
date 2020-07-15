@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xiao Longbao's website</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<p id="firstText">Xiao Longbao's space</p>
+<audio controls src="mich - lucky one.mp3" hidden="hidden" autoplay="autoplay" loop="-1"></audio>
+<div id="firstDiv">
+<img src="1.jpg" id="imgId">
+	<!--图片轮播-->
+<script>
+window.onload=
+	setInterval(step, 1000);
+	var num=1;
+	function step(){
+	if (num<5){
+		num++;
+	}else{
+		num=1;
+	}
+	var dom=document.getElementById("imgId");
+	dom.src=''+ num +'.jpg';
+	}	
+</script>
+</div>
+<br><br>
+<h1 id="secondText"><a href="about.html">WELCOME</a></h1>
+<!--点击WELCOME跳转到下一页面about-->
+</body>
+</html>

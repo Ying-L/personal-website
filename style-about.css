@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    margin:20px;
+	padding:0;
+	background-image: url("7.JPG");
+	background-position: 0px -100px;
+	background-attachment:fixed;
+}
+.name{
+	padding: 10px;
+	color:white;
+	font-size: 50px;
+	font-weight:900;
+	font-style: italic;
+	text-shadow: 3px 3px 2px #DCEFF5;
+}
+/*固定导航条*/
+ul{
+	background-color: #76A2AF;
+	width:300px;
+	height:800px;
+	margin-left: 100px;
+	margin-top:50px;
+	list-style-type:none;
+	float:left;
+	z-index: 0;
+}
+li a{
+ -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  display:block;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 35px;
+  padding: 20px;
+}
+li a:hover:not(.active){
+	color:white;
+	text-decoration: none;
+}
+li .active {
+	text-decoration:underline #DCEFF5;
+	color:#BCD9E1;
+}
+
+#left,#next:hover{
+	cursor: pointer;
+}
+
+
+/*div内容相关样式*/
+#myDescription{
+	width:800px;
+	height:550px;
+	background-color:black;
+	float:left;
+	margin-top:200px;
+	margin-left:50px;
+	z-index: 0;
+}
+#myHobbies, .myExperiences, .myLifestyle{
+	background-color: #EDEDED;
+	float:left;
+	width:1300px;
+	height:800px;
+	margin:50px;
+	overflow: scroll;
+}
+
+#div1{
+	width:100%;
+	margin:auto;
+}
+
+/*分栏*/
+.column{
+	float: left;
+	margin:10px 50px;
+	width:25.5%;
+	text-align: justify;
+}
+
+/*文本样式*/
+#thirdText{
+	color:white;
+	font-size: 40px;
+	text-indent:50px;
+	font-style:italic;
+	margin-bottom: -10px;
+	margin-top:30px;
+}
+#fourthText{
+	color:#76A2AF;
+	font-size:100px;
+	font-weight: 900;
+	text-indent: 30px;
+}
+.text5{
+	color:white;
+	font-size: 35px;
+	text-indent:50px;
+	margin-top:-30px;
+}
+#Text6{
+	margin-right: 30px;
+	text-align: justify;
+}
+
+.Text7{
+	font-size: 20px;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+#Text8{
+	font-size: 80px;
+	margin:50px 40px 10px;
+	font-style:italic;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	letter-spacing: 3px;
+	font-weight: bolder;
+}
+#Text9{
+	z-index:1;
+	position: absolute;
+	margin:50px 250px;
+	font-size:90px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+#Text11{
+	-webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+	z-index: 1;
+	position:absolute;
+	margin:200px 250px;
+	font-size: 25px;
+	display: none;
+}
+
+/*下拉菜单*/
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	/*cursor-光标发生变化*/
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+	color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #DCEFF5;
+}
+
+/*图片样式布局*/
+#Image3{
+	width:60%;
+	margin:10px 50px;
+	float:left;
+}
+.Image4{
+	width:15%;
+	float:left;
+	margin:10px 5px;
+}
+
+#Image4{
+    -webkit-transition-duration: 500ms;
+	/*过渡花费的时间 兼容性*/
+    transition-duration: 500ms;
+	/*规定动画完成一个周期所花费的时间*/
+	width:70%;
+	display: block;
+	margin:auto;
+	opacity: 0.7;
+	z-index: -1;
+}
+#Image6, #Image7{
+	width:100px;
+	-webkit-transition: width 1s, height 1s, -webkit-transform 1s; 
+	/* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 1s, transform 1s;
+}
+#Image6:hover{
+	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+#Image7:hover{
+	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}

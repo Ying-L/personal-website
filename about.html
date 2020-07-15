@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About</title>
+<link href="bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+<link href="style-about.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+  </script>
+</head>
+
+<body>
+	<p id="time" style="font-size:25px;font-weight: bolder;position: absolute"></p>
+	<!--竖向导航栏-->
+	<ul class="menu">
+	<li class="name">Xiao</li>
+	<li class="name">&nbsp;&nbsp;Longbao</li>
+		<br><br><br><br>
+	
+	<li><a class="active" href="about.html">About</a></li>
+	<li><a href="hobbies.html">Hobbies</a></li>
+	<li><a href="experiences.html">Experiences</a></li>
+	<li><a href="lifestyle.html">Lifestyle</a></li>
+		
+	<li><img id="left" src="20.png" style="width:30%;margin-top:10px;margin-left:10px;"></li>
+	</ul>
+	<script>
+	var d = new Date();
+	var x = document.getElementById("time");
+		x.innerHTML=d.toLocaleDateString();
+	</script>
+	<!--显示时间-->
+	<script>
+	$("#left").click(function(){
+		location.href='index.html';
+	});
+	</script>
+    <!--点击左箭头回到home页面-->
+	
+	<!--简单的自我引出内容-->
+	<div id="myDescription">
+		<p id="thirdText">Hello,I'm</p>
+		<p id="fourthText">A great girl</p>
+		<p class="text5">you can't miss</p>
+		<p class="text5">welcome to <span style="color:#76A2AF">Xiao Longbao's</span> space !</p>
+		<p class="text5">go ahead to find more</p>
+		<img src="9.png" style="width: 7%;margin:10px 40px"><span style="color:white;font-size:20px;font-weight: lighter">&nbsp;Hangzhou Dianzi University</span>
+		<br>
+		<img src="8.png" style="width: 7%;margin:10px 40px"><span style="color:white;font-size:20px;font-weight: lighter">&nbsp;Communication (New media)</span>
+	</div>
+</body>
+</html>
